@@ -4,6 +4,20 @@
  * 
  */ 
 
+// Conjuntos (Set) armazenam valores únicos
+
+conjunto = new Set([2, 3]);
+
+conjunto.add(1);
+conjunto.add(1);
+conjunto.add(2);
+conjunto.add(4);
+conjunto.add(5);
+
+console.log(conjunto);  // saída: {2, 3, 1, 4, 5}
+
+
+
 const cientistas = new Set();
 
 cientistas.add('Albert Einstein');
