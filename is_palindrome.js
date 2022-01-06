@@ -6,7 +6,12 @@
 
 function isPalindrome(str) {
   
+  // parameter validation --------------
   if (!str) throw 'Invalid parameter.';
+  
+  if (typeof str !== 'string') 
+    throw 'Incompatible type parameter';
+  // -----------------------------------
 
   tempStr = str.toLowerCase()
                .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // removes accents
@@ -31,5 +36,12 @@ strList = [
 
 console.log('\nÉ palíndromo:\n')
 
-for (let s of strList)
-  console.log(`${isPalindrome(s) ? '[ok]' : '[  ]'} ${s}`);
+try {
+  
+  for (let s of strList)
+    console.log(`${isPalindrome(s) ? '[ok]' : '[  ]'} ${s}`);
+  
+} catch(e) {
+  console.log(e); // show the exception
+  
+}
