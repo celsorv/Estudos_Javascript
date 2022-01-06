@@ -3,6 +3,17 @@
  * 
  */ 
 
+chaveValor = new Map();
+
+chaveValor.set('Zuleica', 58);
+chaveValor.set('Fabiana', 25);
+chaveValor.set('Ariane', 30);
+chaveValor.set('Ariane', 'morena');
+
+console.log(chaveValor)   // saída: {'Zuleica => 58, 'Fabiana => 25, 'Ariane' => 'morena'}
+
+
+
 const map = new Map(
   [
     ['animal', 'cachorro'],
