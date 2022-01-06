@@ -42,6 +42,6 @@ try {
     console.log(`${isPalindrome(s) ? '[ok]' : '[  ]'} ${s}`);
   
 } catch(e) {
-  console.log(e); // show the exception
+  throw e;
   
 }
