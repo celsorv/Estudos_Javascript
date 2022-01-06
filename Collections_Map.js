@@ -55,9 +55,7 @@ console.log('\nou seja:\n');
 console.log(brasilCampeao.entries());
 
 console.log('\n -- forEach:');
-brasilCampeao.forEach((value, key) =>
-  console.log(`${key}: ${value}`)
-);
+brasilCampeao.forEach((value, key) => console.log(`${key}: ${value}`));
 
 console.log('\n -- for...of');
 for (const [key, value] of brasilCampeao)
