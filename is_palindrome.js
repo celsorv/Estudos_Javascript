@@ -6,11 +6,16 @@
 
 function isPalindrome(str) {
   
-  // parameter validation ----------------------------------------------------
-  if (!str) throw new InvalidParameterException();
+  // parameter validation -------------------------------------------------------------
   
-  if (typeof str !== 'string') throw new IncompatibleTypeParameterException();
-  // -------------------------------------------------------------------------
+  if (!str) throw new ReferenceError('Parameter Value empty or null');
+  //if (!str) throw new InvalidParameterException();
+  
+  
+  if (typeof str !== 'string') throw new TypeError('Parameter must be of type string');
+  //if (typeof str !== 'string') throw new IncompatibleTypeParameterException();
+  
+  // ----------------------------------------------------------------------------------
 
   tempStr = str.toLowerCase()
                .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // removes accents
