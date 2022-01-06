@@ -12,6 +12,8 @@ const map = new Map(
   ]
 );
 
+map.set('cor', 'azul');
+
 console.log();
 console.log('Tem tubarão?', map.has('tubarão') ? 'Sim' : 'Não');
 
