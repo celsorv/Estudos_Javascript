@@ -6,7 +6,7 @@
 
 function isPalindrome(str) {
   
-  if (!str) return false;
+  if (!str) throw 'Invalid parameter.';
 
   tempStr = str.toLowerCase()
                .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // removes accents
