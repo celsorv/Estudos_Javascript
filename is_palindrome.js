@@ -37,11 +37,14 @@ strList = [
 console.log('\nÉ palíndromo:\n')
 
 try {
-  
-  for (let s of strList)
+  for (let s of strList) {
     console.log(`${isPalindrome(s) ? '[ok]' : '[  ]'} ${s}`);
+  }
   
 } catch(e) {
   throw e;
+  
+} finally {
+  console.log('--- Process finished ---');
   
 }
