@@ -91,7 +91,7 @@ const total = arr.reduce( (previousValue, currentValue) => previousValue + curre
 console.log(`A soma é: ${total}`);
 
 /***
- * Reduce - obtendo o saldo final
+ * Reduce - Obtendo o saldo final
  */
 
 const lista = [
